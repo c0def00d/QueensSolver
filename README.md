@@ -1,26 +1,10 @@
-# QueensSolver
-Solves the LinkedIn Queens puzzle.
-
-The image of the puzzle matrix on LinkedIn must be transferred to a text file first.
-In this example the Queens #285 puzzle is converted to 'queens285.txt'.
-Each square has a color, a group of squares with the same color is called an area.
-Area numbers start from '0' and can go up to '9' in this version of the solver.
-
-To run the solver, the AWK program is needed.
-awk -f queenssolver.awk queens285.txt
-
-Typical output would be:<br>
-Solve Queens puzzle 285<br>
-Board:<br>
-0  0  1  1# 2  3  3  3  3<br>
-0  0  1  2  2  2  4# 4  3<br>
-0  0  5  5  2# 5  5  4  3<br>
-0  5# 5  5  5  5  5  5  3<br>
-0  5  5  5  5  5  5  5  3#<br>
-0# 0  5  5  5  5  5  3  3<br>
-0  0  6# 5  5  5  3  3  7<br>
-0  6  6  6  5  8# 3  3  7<br>
-0  0  0  6  8  8  7  7# 7<br>
-<br>
-The squares marked with a '#' must contain a Queen.
-These can be entered in the LinkedIn puzzle.
+QueensSolver (2025-02-19)<br>
+One step closer to automation. <br>
+Solving the Queens puzzle involves the following steps:<br>
+1. Open the Queens puzzle page, showing the 'board'.<br>
+2. Right click on the webpage and select 'page source'.<br>
+3. Copy the content (Ctrl-A Ctrl-C) and paste it to a file.<br>
+4. Run the command: awk -f queenssolver.awk pasted_text_file<br>
+5. When the screen shows the result, enter the Queens on the board.<br>
+The squares marked with a '#' must contain a Queen.<br>
+The result will also be written to a 'q###.txt' file.<br>
