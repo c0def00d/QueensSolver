@@ -1,4 +1,4 @@
-# queenssolver.awk
+# queenssolver.awk (2025-02-19)
 BEGIN {
 	size_y = 0
 	queens = 0
